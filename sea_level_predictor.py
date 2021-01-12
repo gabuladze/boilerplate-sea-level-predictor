@@ -7,7 +7,10 @@ def draw_plot():
     data = pd.read_csv('./epa-sea-level.csv')
     
     # Create scatter plot
-
+    plt.figure(1, figsize=(16,5), dpi=150)
+    plt.scatter(x=data['Year'], y=data['CSIRO Adjusted Sea Level'])
+    plt.xlabel('Year')
+    plt.ylabel('CSIRO Adjusted Sea Level')
 
     # Create first line of best fit
 
